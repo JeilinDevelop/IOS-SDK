@@ -1,0 +1,104 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "JxCameraSDK",
+    "printedName": "JxCameraSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JxCameraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JxCameraCore",
+        "printedName": "JxCameraCore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JxCameraCore",
+                "printedName": "JxCameraSDK.JxCameraCore",
+                "usr": "s:11JxCameraSDK0aB4CoreC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JxCameraSDK0aB4CoreC6sharedACvpZ",
+            "mangledName": "$s11JxCameraSDK0aB4CoreC6sharedACvpZ",
+            "moduleName": "JxCameraSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JxCameraCore",
+                    "printedName": "JxCameraSDK.JxCameraCore",
+                    "usr": "s:11JxCameraSDK0aB4CoreC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK0aB4CoreC6sharedACvgZ",
+                "mangledName": "$s11JxCameraSDK0aB4CoreC6sharedACvgZ",
+                "moduleName": "JxCameraSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11JxCameraSDK0aB4CoreC",
+        "mangledName": "$s11JxCameraSDK0aB4CoreC",
+        "moduleName": "JxCameraSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
