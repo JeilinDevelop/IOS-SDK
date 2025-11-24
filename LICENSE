@@ -1,0 +1,72 @@
+JxCameraSDK Free Commercial License Agreement / 免费商业许可协议
+Copyright (c) 2025 JEILIN Technology Co., Ltd.
+
+本 SDK 免费提供给第三方应用集成使用，包括商业及非商业用途，但需遵守以下条款。
+
+1. Grant of License / 授权许可
+JEILIN Technology Co., Ltd. grants you a non-exclusive, non-transferable,
+non-sublicensable license to integrate the binary form of the JxCameraSDK
+(“Software”) into your applications for interacting with JEILIN camera devices.
+
+JEILIN Technology Co., Ltd. 授予您非独占、不可转让、不可再许可的权利，
+允许您将 JxCameraSDK（“软件”）二进制集成到应用中，用于控制和访问 JEILIN 摄像设备。
+
+2. Restrictions / 使用限制
+You may NOT / 您不得：
+- reverse engineer, decompile, disassemble, or modify the Software;  
+  反向工程、反编译、反汇编或修改软件；
+- redistribute, resell, sublicense, or expose the Software as an SDK, API, library, or developer tool;  
+  以 SDK、API、库或开发工具形式重新分发、转售或提供；
+- remove, obscure, or alter any proprietary notices;  
+  删除、隐藏或修改任何所有权声明；
+- use the Software to create competing camera SDKs, developer tools, frameworks, or related products.  
+  使用本软件开发竞品摄像 SDK、工具、框架或相关产品。
+
+3. Ownership / 所有权
+The Software is licensed, not sold. All rights, title, and interest remain
+the exclusive property of JEILIN Technology Co., Ltd.
+
+软件为许可使用，而非出售。所有权、权利及利益均归 JEILIN Technology Co., Ltd. 所有。
+
+4. Third-Party Open Source Components / 第三方开源组件
+This Software may include or depend on third-party open-source components
+distributed under their respective licenses (MIT, BSD, Apache 2.0, LGPL, etc.).
+JEILIN Technology Co., Ltd. does not claim ownership of these components.
+You must comply with the applicable open-source licenses for those components.
+A list of included third-party licenses is provided in: THIRD_PARTY_LICENSES.txt
+
+本软件可能包含或依赖第三方开源组件，遵循各自许可证（MIT、BSD、Apache 2.0、LGPL 等）。
+JEILIN Technology Co., Ltd. 不对这些组件主张所有权。
+您在使用时必须遵守相应的开源协议。第三方开源许可清单见：THIRD_PARTY_LICENSES.txt
+
+5. Disclaimer of Warranty / 免责声明
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT ANY WARRANTY OF ANY KIND.
+YOUR USE OF THE SOFTWARE IS AT YOUR SOLE RISK.
+
+软件按“原样”提供，不附带任何形式的明示或暗示担保。
+使用风险由用户自行承担。
+
+6. Limitation of Liability / 责任限制
+IN NO EVENT SHALL JEILIN TECHNOLOGY CO., LTD. BE LIABLE FOR ANY
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES,
+INCLUDING LOSS OF PROFITS, DATA, OR BUSINESS INTERRUPTION.
+
+在任何情况下，JEILIN Technology Co., Ltd. 对任何间接、偶发、特殊、示例性或衍生损失不承担责任，包括利润损失、数据丢失或业务中断。
+
+7. Termination / 终止
+Any violation of this license results in immediate termination.
+Upon termination, you must cease all use of the Software and delete all copies.
+
+任何违反本协议条款的行为将导致许可自动终止。
+许可终止后，必须停止使用软件并删除所有副本。
+
+8. Governing Law / 适用法律
+This agreement shall be governed by and construed under the laws of
+the jurisdiction in which JEILIN Technology Co., Ltd. is legally registered.
+
+本协议受 JEILIN Technology Co., Ltd. 注册地法律管辖并按其解释。
+
+-------------------------------------------------------------
+For inquiries or business licensing, please contact:
+JEILIN Technology Co., Ltd.
+Email: jeilintechsz@gmail.com
