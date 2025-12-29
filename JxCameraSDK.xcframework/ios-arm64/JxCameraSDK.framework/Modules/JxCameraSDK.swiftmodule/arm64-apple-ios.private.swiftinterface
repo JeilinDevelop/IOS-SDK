@@ -1,13 +1,418 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name JxCameraSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import SystemConfiguration.CaptiveNetwork
+import CoreBluetooth
 import Foundation
+import Network
+import NetworkExtension
+import Security
 import Swift
+import SystemConfiguration
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers final public class JxCameraCore {
-  public static let shared: JxCameraSDK.JxCameraCore
+public protocol JxHttpClient {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func request(url: Foundation.URL, method: JxCameraSDK.JxHttpMethod, headers: [Swift.String : Swift.String]?, body: Foundation.Data?, timeout: Foundation.TimeInterval?, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+public enum JxHttpMethod : Swift.String {
+  case get
+  case post
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct JxSSLConfiguration {
+  public let isEnabled: Swift.Bool
+  public let pinnedCertificates: [Foundation.Data]
+  public let allowSelfSigned: Swift.Bool
+  public let validateHost: Swift.Bool
+  public init(isEnabled: Swift.Bool, pinnedCertificates: [Foundation.Data], allowSelfSigned: Swift.Bool = true, validateHost: Swift.Bool = false)
+}
+@_hasMissingDesignatedInitializers public class BleDevice {
+  final public let peripheral: CoreBluetooth.CBPeripheral
+  final public let advertisementData: [Swift.String : Any]
+  final public let rssi: Foundation.NSNumber
+  public var isConnected: Swift.Bool
+  public var pendingCommand: Swift.String?
+  public var name: Swift.String {
+    get
+  }
+  public var address: Swift.String {
+    get
+  }
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class JxBle : ObjectiveC.NSObject {
+  public func connect(_ device: JxCameraSDK.BleDevice)
+  public func disconnect(_ device: JxCameraSDK.BleDevice)
+  public func isConnected(_ device: JxCameraSDK.BleDevice) -> Swift.Bool
+  public func execDeviceWiFi(_ device: JxCameraSDK.BleDevice, command: Swift.String)
+  @objc deinit
+}
+extension JxCameraSDK.JxBle : CoreBluetooth.CBCentralManagerDelegate {
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func centralManager(_ central: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  #endif
+}
+extension JxCameraSDK.JxBle : CoreBluetooth.CBPeripheralDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
+  #endif
+}
+public struct ManagedInterface {
+  public let type: Network.NWInterface.InterfaceType
+  public let name: Swift.String
+  public var isAvailable: Swift.Bool
+  public var isInternetReachable: Swift.Bool
+  public var isCameraWifi: Swift.Bool
+  public var ssid: Swift.String?
+  public var bssid: Swift.String?
+  public var ipAddress: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class JxNetwork {
+  final public func fetchWifiInfo()
+  final public func isIPAddressInRange(_ ipAddress: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+public class JxRequest {
+  public init(_ client: any JxCameraSDK.JxHttpClient)
+  public func setBaseURL(_ url: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchSetup<T>(type: Swift.String, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchBatteryStatus<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchMisc<T>(type: Swift.String, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sendAliveAck<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchMiscInfo<T>(timeout: Foundation.TimeInterval? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchCurrentWorkMode<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func changeMode<T>(to modeType: Swift.String, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setCommandValue<T>(command: Swift.String, value: Swift.String, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func setCommandValue<T>(command: Swift.String, value: Swift.String) async throws -> T where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func updateDateTime<T>(at date: Foundation.Date, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchMenuJson<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchDictionaryJson<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchAllSettings<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setShutter<T>(to shutter: Swift.Int, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchRecordingStatus<T>(completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchFiles<T>(page: Swift.Int, type: Swift.Int = -1, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func deleteFile<T>(withId fid: Swift.String, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setManualFocus<T>(to type: Swift.Int, x: Swift.Int? = nil, y: Swift.Int? = nil, step: Swift.Int? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public protocol SocketIODelegate : AnyObject {
+  func socketDidConnected(_ socket: JxCameraSDK.JxSocket)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func socket(_ socket: JxCameraSDK.JxSocket, didDisconnectWith error: (any Swift.Error)?)
+  #endif
+  func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
+  func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+}
+extension JxCameraSDK.SocketIODelegate {
+  public func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+}
+public enum SocketState : Swift.Equatable {
+  case disconnected
+  case connecting
+  case connected
+  case failed(any Swift.Error)
+  case waiting(Network.NWError)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (lhs: JxCameraSDK.SocketState, rhs: JxCameraSDK.SocketState) -> Swift.Bool
+}
+public enum SocketError : Swift.Error {
+  case notConnected
+  case encodingFailed
+  case connectionCancelled
+  case custom(Swift.String)
+}
+@_hasMissingDesignatedInitializers public class JxSocket {
+  @objc deinit
+}
+public struct HttpResult : Swift.Codable {
+  public var result: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SetupShutter : Swift.Codable {
+  public var result: Swift.Int
+  public var recodingLength: Swift.Int?
+  public var caption: Swift.String?
+  public var captionTransIdx: Swift.Int?
+  public var msg: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum BatteryLevel : Swift.Int {
+  case empty
+  case low
+  case normal
+  case full
+  case conflict
+  case charging
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct BatteryStatus : Swift.Codable {
+  public var result: Swift.Int
+  public var level: Swift.Int?
+  public var wifiLow: Swift.Int?
+  public var irLedLow: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FileMeta : Swift.Codable, Swift.Equatable {
+  public let dt: Swift.Int
+  public let fid: Swift.String
+  public let name: Swift.String
+  public let size: Swift.Int64
+  public let type: Swift.Int
+  public var isSelected: Swift.Bool?
+  public var isDownloaded: Swift.Bool?
+  public var isVideo: Swift.Bool?
+  public var imageRatio: Swift.Float?
+  public static func == (a: JxCameraSDK.FileMeta, b: JxCameraSDK.FileMeta) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FilePage : Swift.Codable {
+  public let fs: [JxCameraSDK.FileMeta]
+  public let numberOfFiles: Swift.Int
+  public let page: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MiscInfo : Swift.Codable {
+  public var productName: Swift.String?
+  public var chipId: Swift.String?
+  public var svnVer: Swift.Int?
+  public var memorySize: Swift.Int?
+  public var spiSize: Swift.Int?
+  public var sensor: Swift.String?
+  public var wifiChip: Swift.String?
+  public var protocolVer: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CurrentWorkMode : Swift.Codable {
+  public var result: Swift.Int
+  public var mode: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers open class MjpegStreamingController : ObjectiveC.NSObject {
+  open var didReceiveImage: ((UIKit.UIImage) -> Swift.Void)?
+  open var didStartLoading: (() -> Swift.Void)?
+  open var didFinishLoading: (() -> Swift.Void)?
+  open var authenticationHandler: ((Foundation.URLAuthenticationChallenge) -> (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?))?
+  open var contentURL: Foundation.URL?
+  @objc override dynamic public init()
+  @objc deinit
+  open func play(url: Foundation.URL)
+  open func play()
+  open func stop()
+}
+extension JxCameraSDK.MjpegStreamingController : Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+}
+extension JxCameraSDK.MjpegStreamingController : Foundation.URLSessionTaskDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  #endif
+}
+public enum LogLevel : Swift.Int {
+  case debug, info, warn, error
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct SDKConfig {
+  public var logLevel: JxCameraSDK.LogLevel
+  public var connectTimeout: Swift.Double
+  public var readTimeout: Swift.Double
+  public var retryCount: Swift.Int
+  public var autoReconnect: Swift.Bool
+  public var reconnectAttempts: Swift.Int
+  public var reconnectInterval: Swift.Int
+  public var maxReconnectAttempts: Swift.Int
+  public init(logLevel: JxCameraSDK.LogLevel = .info, connectTimeout: Foundation.TimeInterval = 8, readTimeout: Foundation.TimeInterval = 15, retryCount: Swift.Int = 2, autoReconnect: Swift.Bool = true, reconnectAttempts: Swift.Int = 3, reconnectInterval: Swift.Int = 3, maxReconnectAttempts: Swift.Int = 5)
+}
+public struct HttpConfig {
+  public var connectTimeout: Foundation.TimeInterval?
+  public var readTimeout: Foundation.TimeInterval?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(connectTimeout: Foundation.TimeInterval? = nil, readTimeout: Foundation.TimeInterval? = nil)
+  #endif
+}
+public protocol JxCameraBleDelegate : AnyObject {
+  func ble(_ ble: JxCameraSDK.JxBle, didDiscoverDevice device: JxCameraSDK.BleDevice)
+  func ble(_ ble: JxCameraSDK.JxBle, didConnectDevice device: JxCameraSDK.BleDevice)
+  func ble(_ ble: JxCameraSDK.JxBle, didDisconnectDevice device: JxCameraSDK.BleDevice)
+  func ble(_ ble: JxCameraSDK.JxBle, didFailToConnect device: JxCameraSDK.BleDevice)
+}
+public protocol JxCameraNetDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func net(_ network: JxCameraSDK.JxNetwork, statusChanged interface: JxCameraSDK.ManagedInterface?, interfaces: [JxCameraSDK.ManagedInterface])
+  #endif
+  func net(_ network: JxCameraSDK.JxNetwork, didFetchWifi interface: JxCameraSDK.ManagedInterface)
+  func net(_ network: JxCameraSDK.JxNetwork, cameraWifiConnected interface: JxCameraSDK.ManagedInterface)
+  func netDidDisconnectCameraWifi(_ core: JxCameraSDK.JxNetwork)
+}
+public protocol JxCameraSocketDelegate : AnyObject {
+  func socketDidConnect(_ socket: JxCameraSDK.JxSocket)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func socket(_ socket: JxCameraSDK.JxSocket, didDisconnectWith error: (any Swift.Error)?)
+  #endif
+  func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
+  func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+}
+public protocol JxCameraCoreDelegate : AnyObject {
+  func camera(_ core: JxCameraSDK.JxCameraCore, didChangeConnectionState state: JxCameraSDK.JxCameraCore.CameraConnectionState)
+  func camera(_ core: JxCameraSDK.JxCameraCore, didReceiveSocketMessage message: Swift.String)
+  func camera(_ core: JxCameraSDK.JxCameraCore, wifiAvailabilityChanged available: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class JxCameraCore {
+  public static let shared: JxCameraSDK.JxCameraCore
+  public enum CameraConnectionState {
+    case idle
+    case wifiUnavailable
+    case handshaking
+    case socketConnecting
+    case connected
+    case disconnecting
+    case failed(any Swift.Error)
+  }
+  public var connectionState: JxCameraSDK.JxCameraCore.CameraConnectionState {
+    get
+  }
+  public func initialize(context: UIKit.UIApplication, config: JxCameraSDK.SDKConfig)
+  public func startScan()
+  public func stopScan()
+  public func startMonitoring()
+  public func stopMonitoring()
+  public func fetchNetInfo()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getSDKConfig() -> JxCameraSDK.SDKConfig?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func ble() -> JxCameraSDK.JxBle?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func net() -> JxCameraSDK.JxNetwork?
+  #endif
+  public func setHttpClient(_ client: any JxCameraSDK.JxHttpClient)
+  public func request() -> JxCameraSDK.JxRequest
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func request(config: JxCameraSDK.HttpConfig? = nil) -> JxCameraSDK.JxRequest
+  #endif
+  public func getSSLConfig() -> JxCameraSDK.JxSSLConfiguration
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connectCamera(timeout: Foundation.TimeInterval? = nil, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func connectCamera() async throws
+  #endif
+  public func closeCamera()
+  public func setCameraDelegate(_ delegate: any JxCameraSDK.JxCameraCoreDelegate)
+  public func setCameraBleDelegate(_ delegate: any JxCameraSDK.JxCameraBleDelegate)
+  public func setCameraNetDelegate(_ delegate: any JxCameraSDK.JxCameraNetDelegate)
+  public func setCameraSocketDelegate(_ delegate: any JxCameraSDK.JxCameraSocketDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func isSocketState() -> JxCameraSDK.SocketState?
+  #endif
+  public func getHost() -> Swift.String
+  public func getBaseUrl() -> Swift.String
+  public func getMjpegURL() -> Swift.String
+  public func getFileThumbUrl(_ fid: Swift.String) -> Swift.String
+  public func getFileDownUrl(_ fid: Swift.String) -> Swift.String
+  public func setUseSSL(_ useSSL: Swift.Bool)
+  public func isUseSSL() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setProtocolVer(protocolVer: Swift.Int?)
+  #endif
+  public func is6580FW() -> Swift.Bool
+  @objc deinit
+}
+extension JxCameraSDK.JxCameraCore : JxCameraSDK.SocketIODelegate {
+  public func socketDidConnected(_ socket: JxCameraSDK.JxSocket)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func socket(_ socket: JxCameraSDK.JxSocket, didDisconnectWith error: (any Swift.Error)?)
+  #endif
+  public func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
+  public func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+}
+extension JxCameraSDK.JxHttpMethod : Swift.Equatable {}
+extension JxCameraSDK.JxHttpMethod : Swift.Hashable {}
+extension JxCameraSDK.JxHttpMethod : Swift.RawRepresentable {}
+extension JxCameraSDK.BatteryLevel : Swift.Equatable {}
+extension JxCameraSDK.BatteryLevel : Swift.Hashable {}
+extension JxCameraSDK.BatteryLevel : Swift.RawRepresentable {}
+extension JxCameraSDK.LogLevel : Swift.Equatable {}
+extension JxCameraSDK.LogLevel : Swift.Hashable {}
+extension JxCameraSDK.LogLevel : Swift.RawRepresentable {}

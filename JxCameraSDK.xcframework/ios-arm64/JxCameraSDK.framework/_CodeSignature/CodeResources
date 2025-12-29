@@ -6,75 +6,64 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		VmC82L91O5FApoUNWUUkatXQ9rw=
-		</data>
-		<key>JxCameraSDK.podspec</key>
-		<data>
-		fNtI/8IYOb16zqqKdQmHU/aBdWc=
+		6wBBdzN3h7QjjsXNCBx18u3U78g=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		0SP49DMxY+Zfa9lYjozwr4CEbLE=
+		pqEpiXZDHt15ZiUFWY+VtqoNqj0=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		y58orSY6lkG4iC0K2/YneoqShYM=
+		mJwCaKPLXy6JoW2V2uyfUMxymK0=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		RiJfmoP5QOKO+rdXzEvyTXn+m1Y=
+		5Dt8XEVDwjbnYzevw3ySN8HYEbg=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		y58orSY6lkG4iC0K2/YneoqShYM=
+		mJwCaKPLXy6JoW2V2uyfUMxymK0=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wkaxzypXYJNWfZPljOqL2vM8+4g=
+		aFI++r3+29lOu/d76/plIygHLvQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>JxCameraSDK.podspec</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uMEB05bhNec+EuyK3TI1NIN4cR7AZjzoFATTMvI5S7s=
-			</data>
-		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TFMxuc2YzBrv/o3CQwn5rYlzESuaSbswHSeFiGBwdHo=
+			yZ7yyvZ/7N/422vvkVFMPX7Xr07zBOcJTlvgM38o5AI=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNBeBDJIrtGv0yKIjlDt3F58ouSfbgDNkYEFubFq5as=
+			vW7vTEPXgSfX28ay96XnSp3KA1W1BW3Pway/RO1Hrvs=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRKkFLIweT072sBH4F9RfljiaD7p+MwtpynCpnP3V1c=
+			npcyQD0ymHap6w5bg+vRxCL+5P8z86Ud2S4EduVRQSU=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNBeBDJIrtGv0yKIjlDt3F58ouSfbgDNkYEFubFq5as=
+			vW7vTEPXgSfX28ay96XnSp3KA1W1BW3Pway/RO1Hrvs=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5B4sw2FzjasVP6fWVdnBHbAJMOfPczNg8Ju15S8/nw=
+			Bh5n3XoJQVRckBwU7Z9fCy7RhusiPe5pKGJlcXXpz5g=
 			</data>
 		</dict>
 	</dict>
