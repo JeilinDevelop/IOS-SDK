@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JxCameraSDK"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "Jx Camera SDK"
   s.description      = "A powerful camera control SDK for iOS."
 
