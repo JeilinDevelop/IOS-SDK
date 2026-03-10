@@ -26,7 +26,7 @@ JxCameraSDK 是一个用于连接和控制相机设备的 iOS SDK，支持 WiFi 
 在 `Podfile` 中添加：
 
 ```ruby
-pod 'JxCameraSDK', :path => './JxCameraSDK/release'
+pod 'JxCameraSDK', '1.0.2'
 ```
 
 然后运行：
