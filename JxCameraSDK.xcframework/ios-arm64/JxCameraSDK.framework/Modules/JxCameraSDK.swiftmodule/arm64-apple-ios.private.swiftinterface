@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name JxCameraSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import SystemConfiguration.CaptiveNetwork
 import CoreBluetooth
 import Foundation
@@ -161,6 +161,7 @@ public protocol SocketIODelegate : AnyObject {
   #endif
   func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
   func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+  func socketHeartbeatTimeout(_ socket: JxCameraSDK.JxSocket, missCount: Swift.Int)
 }
 extension JxCameraSDK.SocketIODelegate {
   public func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
@@ -196,6 +197,14 @@ public struct SetupShutter : Swift.Codable {
   public var caption: Swift.String?
   public var captionTransIdx: Swift.Int?
   public var msg: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecordStatus : Swift.Codable {
+  public var result: Swift.Int
+  public var time: Swift.Int?
+  public var aviRecording: Swift.Int?
+  public var mp4Recording: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -331,6 +340,7 @@ public protocol JxCameraSocketDelegate : AnyObject {
   #endif
   func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
   func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+  func socketHeartbeatTimeout(_ socket: JxCameraSDK.JxSocket, missCount: Swift.Int)
 }
 public protocol JxCameraCoreDelegate : AnyObject {
   func camera(_ core: JxCameraSDK.JxCameraCore, didChangeConnectionState state: JxCameraSDK.JxCameraCore.CameraConnectionState)
@@ -406,6 +416,7 @@ extension JxCameraSDK.JxCameraCore : JxCameraSDK.SocketIODelegate {
   #endif
   public func socket(_ socket: JxCameraSDK.JxSocket, didReceiveMessage message: Swift.String)
   public func socket(_ socket: JxCameraSDK.JxSocket, didChangeState state: JxCameraSDK.SocketState)
+  public func socketHeartbeatTimeout(_ socket: JxCameraSDK.JxSocket, missCount: Swift.Int)
 }
 extension JxCameraSDK.JxHttpMethod : Swift.Equatable {}
 extension JxCameraSDK.JxHttpMethod : Swift.Hashable {}

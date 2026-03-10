@@ -3885,6 +3885,42 @@
           },
           {
             "kind": "Function",
+            "name": "socketHeartbeatTimeout",
+            "printedName": "socketHeartbeatTimeout(_:missCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JxSocket",
+                "printedName": "JxCameraSDK.JxSocket",
+                "usr": "s:11JxCameraSDK0A6SocketC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11JxCameraSDK16SocketIODelegateP22socketHeartbeatTimeout_9missCountyAA0aD0C_SitF",
+            "mangledName": "$s11JxCameraSDK16SocketIODelegateP22socketHeartbeatTimeout_9missCountyAA0aD0C_SitF",
+            "moduleName": "JxCameraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : JxCameraSDK.SocketIODelegate>",
+            "sugared_genericSig": "<Self where Self : JxCameraSDK.SocketIODelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "socket",
             "printedName": "socket(_:didChangeState:)",
             "children": [
@@ -5274,6 +5310,516 @@
         "declKind": "Struct",
         "usr": "s:11JxCameraSDK12SetupShutterV",
         "mangledName": "$s11JxCameraSDK12SetupShutterV",
+        "moduleName": "JxCameraSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecordStatus",
+        "printedName": "RecordStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JxCameraSDK12RecordStatusV6resultSivp",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV6resultSivp",
+            "moduleName": "JxCameraSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV6resultSivg",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV6resultSivg",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV6resultSivs",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV6resultSivs",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV6resultSivM",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV6resultSivM",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "time",
+            "printedName": "time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JxCameraSDK12RecordStatusV4timeSiSgvp",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV4timeSiSgvp",
+            "moduleName": "JxCameraSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV4timeSiSgvg",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV4timeSiSgvg",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV4timeSiSgvs",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV4timeSiSgvs",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV4timeSiSgvM",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV4timeSiSgvM",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aviRecording",
+            "printedName": "aviRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JxCameraSDK12RecordStatusV12aviRecordingSiSgvp",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV12aviRecordingSiSgvp",
+            "moduleName": "JxCameraSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12aviRecordingSiSgvg",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12aviRecordingSiSgvg",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12aviRecordingSiSgvs",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12aviRecordingSiSgvs",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12aviRecordingSiSgvM",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12aviRecordingSiSgvM",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mp4Recording",
+            "printedName": "mp4Recording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvp",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvp",
+            "moduleName": "JxCameraSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvg",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvg",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvs",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvs",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvM",
+                "mangledName": "$s11JxCameraSDK12RecordStatusV12mp4RecordingSiSgvM",
+                "moduleName": "JxCameraSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecordStatus",
+                "printedName": "JxCameraSDK.RecordStatus",
+                "usr": "s:11JxCameraSDK12RecordStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11JxCameraSDK12RecordStatusV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "JxCameraSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11JxCameraSDK12RecordStatusV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11JxCameraSDK12RecordStatusV6encode2toys7Encoder_p_tKF",
+            "moduleName": "JxCameraSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11JxCameraSDK12RecordStatusV",
+        "mangledName": "$s11JxCameraSDK12RecordStatusV",
         "moduleName": "JxCameraSDK",
         "declAttributes": [
           "AccessControl"
@@ -8477,6 +9023,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JxCameraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -11538,6 +12094,39 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "socketHeartbeatTimeout",
+            "printedName": "socketHeartbeatTimeout(_:missCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JxSocket",
+                "printedName": "JxCameraSDK.JxSocket",
+                "usr": "s:11JxCameraSDK0A6SocketC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11JxCameraSDK0aB14SocketDelegateP22socketHeartbeatTimeout_9missCountyAA0aD0C_SitF",
+            "mangledName": "$s11JxCameraSDK0aB14SocketDelegateP22socketHeartbeatTimeout_9missCountyAA0aD0C_SitF",
+            "moduleName": "JxCameraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : JxCameraSDK.JxCameraSocketDelegate>",
+            "sugared_genericSig": "<Self where Self : JxCameraSDK.JxCameraSocketDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -13026,6 +13615,39 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "socketHeartbeatTimeout",
+            "printedName": "socketHeartbeatTimeout(_:missCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JxSocket",
+                "printedName": "JxCameraSDK.JxSocket",
+                "usr": "s:11JxCameraSDK0A6SocketC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11JxCameraSDK0aB4CoreC22socketHeartbeatTimeout_9missCountyAA0A6SocketC_SitF",
+            "mangledName": "$s11JxCameraSDK0aB4CoreC22socketHeartbeatTimeout_9missCountyAA0A6SocketC_SitF",
+            "moduleName": "JxCameraSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -13270,77 +13892,112 @@
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 8568,
+      "offset": 8968,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "StringLiteral",
-      "offset": 2284,
+      "offset": 2382,
       "length": 10,
       "value": "\"JxSocket\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "StringLiteral",
-      "offset": 2410,
+      "offset": 2508,
       "length": 15,
       "value": "\"com.socket.io\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "Array",
-      "offset": 2626,
+      "offset": 2724,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 2670,
+      "offset": 2768,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 2711,
+      "offset": 2809,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 2766,
+      "offset": 2864,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "FloatLiteral",
-      "offset": 2818,
+      "offset": 2916,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 2895,
+      "offset": 2993,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "BooleanLiteral",
-      "offset": 3986,
+      "offset": 3059,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3139,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3219,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3261,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3312,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4403,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/manage\/JxSocket.swift",
       "kind": "BooleanLiteral",
-      "offset": 4032,
+      "offset": 4449,
       "length": 5,
       "value": "false"
     },
@@ -13388,171 +14045,220 @@
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
+      "kind": "StringLiteral",
+      "offset": 887,
+      "length": 8,
+      "value": "\"Result\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 6,
+      "value": "\"Time\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 16,
+      "value": "\"IsAVIRecording\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 16,
+      "value": "\"IsMP4Recording\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 710,
+      "offset": 1072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
+      "offset": 1124,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 817,
+      "offset": 1179,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 870,
+      "offset": 1232,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 927,
+      "offset": 1289,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 970,
+      "offset": 1332,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1637,
       "length": 8,
       "value": "\"Result\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1305,
+      "offset": 1667,
       "length": 7,
       "value": "\"Level\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1336,
+      "offset": 1698,
       "length": 10,
       "value": "\"Wifi Low\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1733,
       "length": 11,
       "value": "\"IRLED Low\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 2241,
       "length": 3,
       "value": "\"n\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1903,
+      "offset": 2265,
       "length": 3,
       "value": "\"s\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 1927,
+      "offset": 2289,
       "length": 3,
       "value": "\"t\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2239,
+      "offset": 2601,
       "length": 17,
       "value": "\"number_of_files\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2746,
+      "offset": 3108,
       "length": 13,
       "value": "\"ProductName\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 3144,
       "length": 8,
       "value": "\"ChipID\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 3175,
       "length": 9,
       "value": "\"SVN_VER\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2849,
+      "offset": 3211,
       "length": 13,
       "value": "\"Memory_Size\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2886,
+      "offset": 3248,
       "length": 10,
       "value": "\"SPI_SIZE\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2919,
+      "offset": 3281,
       "length": 8,
       "value": "\"Sensor\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2952,
+      "offset": 3314,
       "length": 10,
       "value": "\"WifiChip\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 2990,
+      "offset": 3352,
       "length": 13,
       "value": "\"ProtocolVer\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 3233,
+      "offset": 3595,
       "length": 8,
       "value": "\"Result\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/HttpResult.swift",
       "kind": "StringLiteral",
-      "offset": 3262,
+      "offset": 3624,
       "length": 6,
       "value": "\"Mode\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/SocketRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 9,
+      "value": "\"Request\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/SocketRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 6,
+      "value": "\"Desc\""
+    },
+    {
+      "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/model\/SocketRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 6,
+      "value": "\"Time\""
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/JxCameraCore.swift",
@@ -13676,21 +14382,21 @@
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/JxCameraCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 3124,
+      "offset": 3192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/JxCameraCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 8516,
+      "offset": 8584,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jxcs\/Documents\/Developers\/svn_rep\/Polaroid-IOS-V2\/JxCameraSDK\/JxCameraSDK\/JxCameraCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 8556,
+      "offset": 8624,
       "length": 2,
       "value": "30"
     }

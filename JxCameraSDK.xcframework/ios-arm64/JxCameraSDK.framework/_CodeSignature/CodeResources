@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		6wBBdzN3h7QjjsXNCBx18u3U78g=
+		RxcyS90EXN7zsqmX2RxPN3gNWxQ=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		pqEpiXZDHt15ZiUFWY+VtqoNqj0=
+		Rp5laOyKeEZye7G8oykHkqAOK/A=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mJwCaKPLXy6JoW2V2uyfUMxymK0=
+		X379ODYT1P+dmP8EX06eHZD9GI0=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5Dt8XEVDwjbnYzevw3ySN8HYEbg=
+		uaYOSRkhdf4kHLY+e2a7DVYOJsc=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mJwCaKPLXy6JoW2V2uyfUMxymK0=
+		X379ODYT1P+dmP8EX06eHZD9GI0=
 		</data>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		aFI++r3+29lOu/d76/plIygHLvQ=
+		QP8i0HQU6R+0d6MH+eFtuX2vCIE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yZ7yyvZ/7N/422vvkVFMPX7Xr07zBOcJTlvgM38o5AI=
+			R3nLz6nwgOYFbLrQvdCtD6phG6u8fZEjZoNOaAEkaA4=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vW7vTEPXgSfX28ay96XnSp3KA1W1BW3Pway/RO1Hrvs=
+			BHyeGdnAyoT7dv14Uz+8F8mMgmsKHA6NcW0RhXfDlnU=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npcyQD0ymHap6w5bg+vRxCL+5P8z86Ud2S4EduVRQSU=
+			BV/VVI+a2FSJJYvM9+PiYSV7NMX5wxKMLEUanhq+GRw=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vW7vTEPXgSfX28ay96XnSp3KA1W1BW3Pway/RO1Hrvs=
+			BHyeGdnAyoT7dv14Uz+8F8mMgmsKHA6NcW0RhXfDlnU=
 			</data>
 		</dict>
 		<key>Modules/JxCameraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bh5n3XoJQVRckBwU7Z9fCy7RhusiPe5pKGJlcXXpz5g=
+			kjlVOOSzqCiN7iNNz5x2PV23+gKduRXM/3CoMSRf7V4=
 			</data>
 		</dict>
 	</dict>
