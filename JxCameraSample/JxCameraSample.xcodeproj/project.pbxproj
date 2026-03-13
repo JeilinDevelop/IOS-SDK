@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC2651329C1508323AED0986 /* Pods_JxCameraSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C96FBF2B8A7296712E5AC /* Pods_JxCameraSample.framework */; };
+		E8E496E8A710BD5F03A4B7C4 /* Pods_JxCameraSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33E6866B0EFC7F5274E442 /* Pods_JxCameraSampleTests.framework */; };
+		EA515A032F62AF010013954B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA515A022F62AF010013954B /* AVFoundation.framework */; };
+		EA515A052F62AF0C0013954B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA515A042F62AF0C0013954B /* UIKit.framework */; };
+		F492FFD05EFDE897C3EE4286 /* Pods_JxCameraSample_JxCameraSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8F58C1F98A8F7325028BFB /* Pods_JxCameraSample_JxCameraSampleUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA5158752F6293F10013954B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5158532F6293ED0013954B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA51585A2F6293ED0013954B;
+			remoteInfo = JxCameraSample;
+		};
+		EA51587F2F6293F10013954B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5158532F6293ED0013954B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA51585A2F6293ED0013954B;
+			remoteInfo = JxCameraSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05AA9F5F497A9AF45D081EFA /* Pods-JxCameraSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSampleTests.release.xcconfig"; path = "Target Support Files/Pods-JxCameraSampleTests/Pods-JxCameraSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C9A7861B65C99C4C4279647 /* Pods-JxCameraSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSample.release.xcconfig"; path = "Target Support Files/Pods-JxCameraSample/Pods-JxCameraSample.release.xcconfig"; sourceTree = "<group>"; };
+		77C2E2FEEBDCA075BD71CAA5 /* Pods-JxCameraSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSample.debug.xcconfig"; path = "Target Support Files/Pods-JxCameraSample/Pods-JxCameraSample.debug.xcconfig"; sourceTree = "<group>"; };
+		78568BE8328E05024D0A39BC /* Pods-JxCameraSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JxCameraSampleTests/Pods-JxCameraSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		830C96FBF2B8A7296712E5AC /* Pods_JxCameraSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JxCameraSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C43180DB0999F36765090E2 /* Pods-JxCameraSample-JxCameraSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSample-JxCameraSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-JxCameraSample-JxCameraSampleUITests/Pods-JxCameraSample-JxCameraSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D5FC19A24D29284DD2E8A2D /* Pods-JxCameraSample-JxCameraSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JxCameraSample-JxCameraSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-JxCameraSample-JxCameraSampleUITests/Pods-JxCameraSample-JxCameraSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB33E6866B0EFC7F5274E442 /* Pods_JxCameraSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JxCameraSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA51585B2F6293ED0013954B /* JxCameraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JxCameraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5158742F6293F10013954B /* JxCameraSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JxCameraSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA51587E2F6293F10013954B /* JxCameraSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JxCameraSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA515A022F62AF010013954B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA515A042F62AF0C0013954B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB8F58C1F98A8F7325028BFB /* Pods_JxCameraSample_JxCameraSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JxCameraSample_JxCameraSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EA5158862F6293F10013954B /* Exceptions for "JxCameraSample" folder in "JxCameraSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EA51585A2F6293ED0013954B /* JxCameraSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EA51585D2F6293ED0013954B /* JxCameraSample */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EA5158862F6293F10013954B /* Exceptions for "JxCameraSample" folder in "JxCameraSample" target */,
+			);
+			path = JxCameraSample;
+			sourceTree = "<group>";
+		};
+		EA5158772F6293F10013954B /* JxCameraSampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JxCameraSampleTests;
+			sourceTree = "<group>";
+		};
+		EA5158812F6293F10013954B /* JxCameraSampleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JxCameraSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5158582F6293ED0013954B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA515A032F62AF010013954B /* AVFoundation.framework in Frameworks */,
+				EA515A052F62AF0C0013954B /* UIKit.framework in Frameworks */,
+				DC2651329C1508323AED0986 /* Pods_JxCameraSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5158712F6293F10013954B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E496E8A710BD5F03A4B7C4 /* Pods_JxCameraSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA51587B2F6293F10013954B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F492FFD05EFDE897C3EE4286 /* Pods_JxCameraSample_JxCameraSampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8304864E88394333149B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA515A042F62AF0C0013954B /* UIKit.framework */,
+				EA515A022F62AF010013954B /* AVFoundation.framework */,
+				830C96FBF2B8A7296712E5AC /* Pods_JxCameraSample.framework */,
+				EB8F58C1F98A8F7325028BFB /* Pods_JxCameraSample_JxCameraSampleUITests.framework */,
+				BB33E6866B0EFC7F5274E442 /* Pods_JxCameraSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7E0D5EDAA287F3CFA74196B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77C2E2FEEBDCA075BD71CAA5 /* Pods-JxCameraSample.debug.xcconfig */,
+				1C9A7861B65C99C4C4279647 /* Pods-JxCameraSample.release.xcconfig */,
+				9D5FC19A24D29284DD2E8A2D /* Pods-JxCameraSample-JxCameraSampleUITests.debug.xcconfig */,
+				9C43180DB0999F36765090E2 /* Pods-JxCameraSample-JxCameraSampleUITests.release.xcconfig */,
+				78568BE8328E05024D0A39BC /* Pods-JxCameraSampleTests.debug.xcconfig */,
+				05AA9F5F497A9AF45D081EFA /* Pods-JxCameraSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA5158522F6293ED0013954B = {
+			isa = PBXGroup;
+			children = (
+				EA51585D2F6293ED0013954B /* JxCameraSample */,
+				EA5158772F6293F10013954B /* JxCameraSampleTests */,
+				EA5158812F6293F10013954B /* JxCameraSampleUITests */,
+				EA51585C2F6293ED0013954B /* Products */,
+				E7E0D5EDAA287F3CFA74196B /* Pods */,
+				3A8304864E88394333149B41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA51585C2F6293ED0013954B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA51585B2F6293ED0013954B /* JxCameraSample.app */,
+				EA5158742F6293F10013954B /* JxCameraSampleTests.xctest */,
+				EA51587E2F6293F10013954B /* JxCameraSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA51585A2F6293ED0013954B /* JxCameraSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5158872F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSample" */;
+			buildPhases = (
+				1EF7F9B2B32607C1C8FE2F03 /* [CP] Check Pods Manifest.lock */,
+				EA5158572F6293ED0013954B /* Sources */,
+				EA5158582F6293ED0013954B /* Frameworks */,
+				EA5158592F6293ED0013954B /* Resources */,
+				3BFDAC594FF61481718E3487 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EA51585D2F6293ED0013954B /* JxCameraSample */,
+			);
+			name = JxCameraSample;
+			productName = JxCameraSample;
+			productReference = EA51585B2F6293ED0013954B /* JxCameraSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5158732F6293F10013954B /* JxCameraSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA51588C2F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSampleTests" */;
+			buildPhases = (
+				B83FB55EDCE148D74E93E0BA /* [CP] Check Pods Manifest.lock */,
+				EA5158702F6293F10013954B /* Sources */,
+				EA5158712F6293F10013954B /* Frameworks */,
+				EA5158722F6293F10013954B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5158762F6293F10013954B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA5158772F6293F10013954B /* JxCameraSampleTests */,
+			);
+			name = JxCameraSampleTests;
+			productName = JxCameraSampleTests;
+			productReference = EA5158742F6293F10013954B /* JxCameraSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA51587D2F6293F10013954B /* JxCameraSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA51588F2F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSampleUITests" */;
+			buildPhases = (
+				D176D970ABCB57A3B64B8107 /* [CP] Check Pods Manifest.lock */,
+				EA51587A2F6293F10013954B /* Sources */,
+				EA51587B2F6293F10013954B /* Frameworks */,
+				EA51587C2F6293F10013954B /* Resources */,
+				DB331DC4B0C9DD7DC08CC267 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5158802F6293F10013954B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA5158812F6293F10013954B /* JxCameraSampleUITests */,
+			);
+			name = JxCameraSampleUITests;
+			productName = JxCameraSampleUITests;
+			productReference = EA51587E2F6293F10013954B /* JxCameraSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5158532F6293ED0013954B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					EA51585A2F6293ED0013954B = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					EA5158732F6293F10013954B = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = EA51585A2F6293ED0013954B;
+					};
+					EA51587D2F6293F10013954B = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = EA51585A2F6293ED0013954B;
+					};
+				};
+			};
+			buildConfigurationList = EA5158562F6293ED0013954B /* Build configuration list for PBXProject "JxCameraSample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5158522F6293ED0013954B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EA51585C2F6293ED0013954B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA51585A2F6293ED0013954B /* JxCameraSample */,
+				EA5158732F6293F10013954B /* JxCameraSampleTests */,
+				EA51587D2F6293F10013954B /* JxCameraSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5158592F6293ED0013954B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5158722F6293F10013954B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA51587C2F6293F10013954B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EF7F9B2B32607C1C8FE2F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JxCameraSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BFDAC594FF61481718E3487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample/Pods-JxCameraSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample/Pods-JxCameraSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample/Pods-JxCameraSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83FB55EDCE148D74E93E0BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JxCameraSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D176D970ABCB57A3B64B8107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JxCameraSample-JxCameraSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB331DC4B0C9DD7DC08CC267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample-JxCameraSampleUITests/Pods-JxCameraSample-JxCameraSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample-JxCameraSampleUITests/Pods-JxCameraSample-JxCameraSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JxCameraSample-JxCameraSampleUITests/Pods-JxCameraSample-JxCameraSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5158572F6293ED0013954B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5158702F6293F10013954B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA51587A2F6293F10013954B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA5158762F6293F10013954B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA51585A2F6293ED0013954B /* JxCameraSample */;
+			targetProxy = EA5158752F6293F10013954B /* PBXContainerItemProxy */;
+		};
+		EA5158802F6293F10013954B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA51585A2F6293ED0013954B /* JxCameraSample */;
+			targetProxy = EA51587F2F6293F10013954B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA5158882F6293F10013954B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C2E2FEEBDCA075BD71CAA5 /* Pods-JxCameraSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JxCameraSample/JxCameraSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9F3KC5L353;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JxCameraSample/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问局域网设备以正常使用功能";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要使用位置识别Wi-Fi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要使用定位获取当前 WiFi 信息";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxcs.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jxcs_sample_profile_dev;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5158892F6293F10013954B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9A7861B65C99C4C4279647 /* Pods-JxCameraSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JxCameraSample/JxCameraSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9F3KC5L353;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JxCameraSample/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问局域网设备以正常使用功能";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要使用位置识别Wi-Fi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要使用定位获取当前 WiFi 信息";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxcs.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jxcs_sample_profile_dev;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA51588A2F6293F10013954B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QHP584QL45;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA51588B2F6293F10013954B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QHP584QL45;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA51588D2F6293F10013954B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78568BE8328E05024D0A39BC /* Pods-JxCameraSampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHP584QL45;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlcs.app.JxCameraSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JxCameraSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JxCameraSample";
+			};
+			name = Debug;
+		};
+		EA51588E2F6293F10013954B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AA9F5F497A9AF45D081EFA /* Pods-JxCameraSampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHP584QL45;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlcs.app.JxCameraSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JxCameraSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JxCameraSample";
+			};
+			name = Release;
+		};
+		EA5158902F6293F10013954B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D5FC19A24D29284DD2E8A2D /* Pods-JxCameraSample-JxCameraSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHP584QL45;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlcs.app.JxCameraSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JxCameraSample;
+			};
+			name = Debug;
+		};
+		EA5158912F6293F10013954B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C43180DB0999F36765090E2 /* Pods-JxCameraSample-JxCameraSampleUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHP584QL45;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlcs.app.JxCameraSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JxCameraSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5158562F6293ED0013954B /* Build configuration list for PBXProject "JxCameraSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA51588A2F6293F10013954B /* Debug */,
+				EA51588B2F6293F10013954B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5158872F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5158882F6293F10013954B /* Debug */,
+				EA5158892F6293F10013954B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA51588C2F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA51588D2F6293F10013954B /* Debug */,
+				EA51588E2F6293F10013954B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA51588F2F6293F10013954B /* Build configuration list for PBXNativeTarget "JxCameraSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5158902F6293F10013954B /* Debug */,
+				EA5158912F6293F10013954B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA5158532F6293ED0013954B /* Project object */;
+}
